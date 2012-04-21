@@ -1,0 +1,26 @@
+# ==========================================================================
+# Project:   Developin
+# Copyright: @2012 My Company, Inc.
+# ==========================================================================
+
+# This is your Buildfile for your app, Developin. This tells SproutCore
+# how to build your app. These settings override those in your project
+# Buildfile, which contains default settings for all apps in your project.
+
+# It is better to add :required targets here than in the global Buildfile.
+config :developin do |c|
+  c[:required] = [
+    :'sproutcore/jquery',
+    :'sproutcore/foundation',
+    :'sproutcore/desktop',
+    :'stativus'
+  ]
+  c[:index_at] = ''
+  c[:layout] = 'lib/index.rhtml'
+  c[:optimize_sprites] = true
+  c[:use_sprites] = false
+  c[:build_mode] = :development
+  c[:combine_stylesheets] = :development
+  c[:include_fixtures] = :development
+  c[:pad_sprites_for_debugging] = false
+end

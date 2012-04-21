@@ -1,0 +1,7 @@
+frameworks/
+.DS_Store
+
+tmp
+Gemfile
+Gemfile.lock
+bin
